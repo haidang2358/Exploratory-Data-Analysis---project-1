@@ -1,4 +1,4 @@
-datafile <- ""household_power_consumption.txt")
+datafile <- "household_power_consumption.txt")
 data <- read.table(datafile, header = TRUE, sep = ";", stringsAsFactors = FALSE, dec = ".")
 subsetData <- data[data$Date %in% c("01/02/2007","02/02/2017"),]
 glob <- as.numeric(subsetData$Global_active_power)
